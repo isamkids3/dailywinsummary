@@ -5,4 +5,6 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+  // Use BASE_PATH injected by GitHub Actions for subdirectory hosting
+  base: process.env.BASE_PATH || "/",
 });

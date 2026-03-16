@@ -14,7 +14,7 @@ export function OutroSlide() {
 
                 <div className="flex flex-col items-center">
                     <button
-                        onClick={() => window.location.href = '/'}
+                        onClick={() => window.location.href = '/dailywinsummary'} // Change to '/' when running locally
                         className="pointer-events-auto absolute bottom-12 px-10 py-5 bg-white text-indigo-900 rounded-full font-black text-xl hover:scale-105 transition-transform active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.2)] opacity-0 animate-fade-in [animation-delay:1000ms] cursor-pointer"
                     >
                         Back to Home

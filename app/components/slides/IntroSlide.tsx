@@ -40,7 +40,7 @@ export function IntroSlide({ onStart, isLoading }: IntroSlideProps) {
                     {isLoading ? (
                         <div className="w-6 h-6 border-2 border-indigo-700 border-t-transparent rounded-full animate-spin" />
                     ) : (
-                        "Generate My Wrapped"
+                        "Generate My Summary"
                     )}
                 </button>
             </form>

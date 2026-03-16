@@ -21,7 +21,7 @@ export function DeepSeekSlide({ summaryText, isLoading }: DeepSeekSlideProps) {
                         {/* Decorative Quote Mark */}
                         <div className="absolute top-4 left-4 text-white/10 text-8xl font-serif leading-none select-none">"</div>
 
-                        <div className="relative z-10 text-white leading-relaxed text-base sm:text-lg font-medium opacity-0 animate-fade-in [animation-delay:400ms] space-y-4 max-h-[60vh] overflow-y-auto no-scrollbar pb-4 pr-2">
+                        <div className="relative z-10 text-white leading-relaxed text-base sm:text-lg font-medium opacity-0 animate-fade-in [animation-delay:400ms] space-y-4 max-h-[60vh] overflow-y-auto no-scrollbar pb-4 pr-2 pointer-events-auto">
                             {summaryText.split('\n').filter(p => p.trim() !== '').map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
                             ))}
